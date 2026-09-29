@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyril Okoro — Web Developer</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <div class="page">
+    <canvas id="particle-canvas"></canvas>
+    <div class="radial-glow glow-1"></div>
+    <div class="radial-glow glow-2"></div>
+    <div class="radial-glow glow-3"></div>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav glass-nav">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <span class="bracket">&lt;</span>
+          <span class="name">Cyril</span>
+          <span class="shimmer-text">.dev</span>
+          <span class="bracket">/&gt;</span>
+        </a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#tech" class="nav-link">Tech Stack</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a href="https://github.com/okorocy089-crypto" target="_blank" rel="noopener noreferrer" class="nav-github">GitHub ↗</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+          <svg class="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg class="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="nav-mobile" class="nav-mobile">
+        <div class="nav-mobile-inner">
+          <a href="#about">About</a>
+          <a href="#tech">Tech Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main container">
+
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="hero-text reveal">
+          <div class="badge">
+            <span class="badge-dot">
+              <span class="ping"></span>
+              <span class="core"></span>
+            </span>
+            <span>Open to opportunities</span>
+          </div>
+          <h1>Hi, I'm <br><span class="shimmer-text">Cyril Okoro</span></h1>
+          <p class="hero-role">Web Developer — Python &amp; Django</p>
+          <p class="hero-desc">I'm learning web development through an institution, focused on the frontend trio (HTML, CSS, JavaScript) and Django. I build real projects to learn, and I'm currently looking for my first opportunity to grow.</p>
+          <div class="tag-row">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-emerald">
+              <span>View Projects</span>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary"><span>Get In Touch</span></a>
+          </div>
+        </div>
+
+        <div class="hero-side reveal reveal-delay-2">
+          <div class="photo-wrap">
+            <div class="hero-photo photo-ring">
+              <img src="picture.png" alt="Cyril Okoro">
+            </div>
+          </div>
+          <div class="terminal glass-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="terminal-title">developer_profile.py</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="kw">class</span> <span class="cls">Developer</span>:</p>
+              <p class="pl-4"><span class="kw">def</span> <span class="fn">__init__</span>(<span class="self">self</span>):</p>
+              <p class="pl-8"><span class="self">self</span>.name = <span class="str">"Cyril Okoro"</span></p>
+              <p class="pl-8"><span class="self">self</span>.stack = [<span class="str">"Python"</span>, <span class="str">"Django"</span>, <span class="str">"JavaScript"</span>]</p>
+              <p class="pl-8"><span class="self">self</span>.status = <span class="str">"Building &amp; learning every day"</span></p>
+              <p class="pl-4"><span class="kw">def</span> <span class="fn">get_goal</span>(<span class="self">self</span>):</p>
+              <p class="pl-8"><span class="kw">return</span> <span class="str">"Land my first dev role"</span></p>
+              <div class="terminal-type">
+                <span class="prompt">&gt;&gt;&gt;</span>
+                <span id="typewriter"></span>
+                <span class="cursor-blink prompt">█</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">01.</span>
+          <h2 class="section-title">About My Journey</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="cards-grid">
+          <div class="glass-card about-card reveal reveal-delay-1">
+            <div class="icon-box">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3>Frontend Foundations</h3>
+            <p>Building crisp, fully responsive user interfaces with HTML5, CSS3, and JavaScript ES6+. Comfortable with Tailwind CSS for utility-first styling and polished layouts.</p>
+          </div>
+          <div class="glass-card about-card featured reveal reveal-delay-2">
+            <div class="icon-box">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <h3>Python &amp; Django</h3>
+            <p>Learning full-stack engineering through Django. Building relational schemas, RESTful views, ORM queries, and authentication systems on real deployed projects.</p>
+          </div>
+          <div class="glass-card about-card reveal reveal-delay-3">
+            <div class="icon-box">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3>Real Projects to Learn</h3>
+            <p>I believe the fastest path to growth is building things that ship. Every project teaches me something new — from WhatsApp checkout flows to AI-integrated backends.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section id="tech" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">02.</span>
+          <h2 class="section-title">Technical Toolkit</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="tech-grid">
+          <div class="glass-card tech-card reveal reveal-delay-1"><span class="icon">🐍</span><span class="label">Python</span><span class="sub">Core Language</span></div>
+          <div class="glass-card tech-card reveal reveal-delay-2"><span class="icon">⚙️</span><span class="label">Django</span><span class="sub">Web Framework</span></div>
+          <div class="glass-card tech-card reveal reveal-delay-3"><span class="icon">🗄️</span><span class="label">PostgreSQL</span><span class="sub">Database</span></div>
+          <div class="glass-card tech-card reveal reveal-delay-3"><span class="icon">⚡</span><span class="label">JavaScript</span><span class="sub">Frontend Logic</span></div>
+          <div class="glass-card tech-card reveal reveal-delay-3"><span class="icon">🎨</span><span class="label">Tailwind CSS</span><span class="sub">Styling</span></div>
+          <div class="glass-card tech-card reveal reveal-delay-3"><span class="icon">🔀</span><span class="label">Git &amp; GitHub</span><span class="sub">Version Control</span></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">03.</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Honey Jewels -->
+          <div class="glass-card project-card reveal reveal-delay-1">
+            <div class="project-body">
+              <div class="project-top">
+                <span class="chip">Showcase website</span>
+                <div class="project-links">
+                  <a href="https://cyril.pythonanywhere.com" target="_blank" rel="noopener noreferrer" title="Live Demo">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Honey Jewels</h3>
+              <p class="desc">A product showcase website built for a jewelry business. Includes product listings, category filtering, a cart, and a WhatsApp-based checkout flow that sends orders directly to the business owner.</p>
+              <div class="hash-tags"><span>#HTML</span><span>#CSS</span><span>#JavaScript</span></div>
+            </div>
+            <div class="project-footer">
+              <button class="link-btn" data-modal="jewels">
+                
+                
+              </button>
+              <a href="https://cyril.pythonanywhere.com" target="_blank" rel="noopener noreferrer" class="link-external">Live Demo ↗</a>
+            </div>
+          </div>
+
+          <!-- Amazon Clone -->
+          <div class="glass-card project-card reveal reveal-delay-2">
+            <div class="project-body">
+              <div class="project-top">
+                <span class="chip">E-Commerce</span>
+                <div class="project-links">
+                  <a href="https://github.com/okorocy089-crypto/amazon-clone-" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="https://gkingn.pythonanywhere.com" target="_blank" rel="noopener noreferrer" title="Live Demo">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Amazon Clone</h3>
+              <p class="desc">A simplified Amazon-style e-commerce catalog built as a learning project. Features product browsing, category filtering, a session-based cart, and a full checkout flow.</p>
+              <div class="hash-tags"><span>#Python</span><span>#Django</span><span>#HTML</span><span>#CSS</span><span>#JavaScript</span></div>
+            </div>
+            <div class="project-footer">
+              <button class="link-btn" data-modal="amazon">
+              </button>
+              <a href="https://gkingn.pythonanywhere.com" target="_blank" rel="noopener noreferrer" class="link-external">Live Demo ↗</a>
+            </div>
+          </div>
+
+          <!-- Flora Bloom -->
+          <div class="glass-card project-card wide reveal reveal-delay-3">
+            <div class="project-body">
+              <div class="project-top">
+                <div class="left">
+                  <span class="chip">Frontend</span>
+                  <span class="chip chip-yellow">In Progress</span>
+                </div>
+              </div>
+              <h3>Flora Bloom</h3>
+              <p class="desc">A responsive houseplant store frontend with category filtering, a hero section, and a product grid. Built to practice modern CSS layout techniques and JavaScript interactivity — no framework dependencies.</p>
+              <div class="hash-tags"><span>#HTML</span><span>#CSS</span><span>#JavaScript</span></div>
+            </div>
+            <div class="project-footer solo">
+              <button class="link-btn" data-modal="flora">
+                <span>View Details</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="contact-header reveal">
+          <span class="contact-eyebrow">04. // What's Next?</span>
+          <h2>Get In Touch</h2>
+          <p>Whether you have a project in mind, a job opportunity, or simply want to connect — I'm always open to a conversation.</p>
+        </div>
+
+        <div class="social-grid reveal reveal-delay-1">
+          <a href="https://github.com/okorocy089-crypto" target="_blank" rel="noopener noreferrer" class="glass-card social-card">
+            <span class="icon">💻</span><span class="label">GitHub</span><span class="sub">okorocy089-crypto</span>
+          </a>
+          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="glass-card social-card">
+            <span class="icon">💼</span><span class="label">LinkedIn</span><span class="sub">Connect with me</span>
+          </a>
+          <a href="https://x.com/gkingn01" target="_blank" rel="noopener noreferrer" class="glass-card social-card">
+            <span class="icon">🐦</span><span class="label">X (Twitter)</span><span class="sub">@gkingn01</span>
+          </a>
+          <a href="https://wa.me/07038731910" target="_blank" rel="noopener noreferrer" class="glass-card social-card">
+            <span class="icon">💬</span><span class="label">WhatsApp</span><span class="sub">Message me</span>
+          </a>
+        </div>
+
+        <div class="contact-divider reveal reveal-delay-2">
+          <p>— or send me a message —</p>
+        </div>
+
+        <form action="https://formspree.io/f/xaenawzb" method="POST" id="contact-form" class="glass-card contact-form reveal reveal-delay-2">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">YOUR NAME</label>
+              <input type="text" id="name" required placeholder="Jane Smith" class="form-input">
+            </div>
+            <div class="form-field">
+              <label for="email">YOUR EMAIL</label>
+              <input type="email" id="email" required placeholder="jane@example.com" class="form-input">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">YOUR MESSAGE</label>
+            <textarea id="message" rows="4" required placeholder="Hi Cyril, I'd love to discuss..." class="form-input"></textarea>
+          </div>
+          <button type="submit" class="btn-submit btn-emerald">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            <span>Send Message</span>
+          </button>
+        </form>
+
+        <div id="form-success" class="form-success">
+          Message sent! I'll get back to you shortly.
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>Designed &amp; built by <span class="accent">Cyril Okoro</span></p>
+      <p>© 2026 Cyril.dev — All rights reserved.</p>
+    </footer>
+
+    <!-- ===== PROJECT MODAL ===== -->
+    <div id="modal" class="modal">
+      <div class="glass-card modal-card">
+        <button id="modal-close-x" class="modal-close" aria-label="Close">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <div class="modal-head">
+          <span class="chip">Architecture Deep Dive</span>
+          <h3 id="modal-title"></h3>
+        </div>
+        <div id="modal-body" class="modal-body"></div>
+        <div class="modal-foot">
+          <button id="modal-close-btn" class="btn-close-modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
